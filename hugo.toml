@@ -1,0 +1,17 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'en-us'
+title = 'NAMS Whitepapers'
+theme = 'hello-friend-ng'
+# Optional: Enable drafts by default locally
+buildDrafts = true
+
+[permalinks]
+  papers = "/papers/:year/:month/:title/"
+
+[params]
+  description = "Collection of whitepapers and research documents"
+  homeSubtitle = "Research Papers and Whitepapers"
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
