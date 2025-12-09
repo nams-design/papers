@@ -1,27 +1,11 @@
 ---
-title: "Example Whitepaper"
+title: "Hello World"
 date: 2025-12-08T12:00:00+05:30
 draft: false
 ---
 
-## Abstract
+Welcome to the NAMS Whitepapers site!
 
-This is an example whitepaper document. Replace this content with your actual whitepaper content.
+This is our inaugural post. We are a small company with big ambitions, dedicated to taking on and overcoming new challenges. Our mission is to develop technologies that empower small businesses like ours through a modern technological lens.
 
-## Introduction
-
-Whitepapers are authoritative reports or guides that inform readers concisely about a complex issue and present the issuing body's philosophy on the matter.
-
-## Content
-
-Add your whitepaper content here. This can include:
-
-- Technical specifications
-- Research findings
-- Policy recommendations
-- Implementation guides
-- And more...
-
-## Conclusion
-
-Summarize your key findings and recommendations here.
+We believe that maintaining a small team is not a limitation, but rather a unique advantage that allows us to be agile as we tackle the industry's biggest problems.
