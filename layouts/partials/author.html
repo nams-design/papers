@@ -1,0 +1,58 @@
+{{ if .Params.author }}
+  <div class="post-author" style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding: 12px; border-radius: 8px; background: rgba(128, 128, 128, 0.1);">
+    {{ if .Params.author.avatar }}
+      {{ $avatar := .Params.author.avatar }}
+      {{ if not (hasPrefix $avatar "http") }}
+        {{ $avatar = $avatar | relURL }}
+      {{ end }}
+      <img src="{{ $avatar }}" 
+           alt="{{ .Params.author.name | default .Params.author }}" 
+           style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid rgba(128, 128, 128, 0.2);" />
+    {{ else }}
+      <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(128, 128, 128, 0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 600; font-size: 1.2rem;">
+        {{ substr (.Params.author.name | default .Params.author) 0 1 | upper }}
+      </div>
+    {{ end }}
+    <div>
+      <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 2px;">
+        {{ if .Params.author.name }}
+          {{ .Params.author.name }}
+        {{ else }}
+          {{ .Params.author }}
+        {{ end }}
+      </div>
+      {{ if .Params.author.bio }}
+        <div style="font-size: 0.85rem; opacity: 0.7;">
+          {{ .Params.author.bio }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ else if .Params.authorName }}
+  <div class="post-author" style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding: 12px; border-radius: 8px; background: rgba(128, 128, 128, 0.1);">
+    {{ if .Params.authorAvatar }}
+      {{ $avatar := .Params.authorAvatar }}
+      {{ if not (hasPrefix $avatar "http") }}
+        {{ $avatar = $avatar | relURL }}
+      {{ end }}
+      <img src="{{ $avatar }}" 
+           alt="{{ .Params.authorName }}" 
+           style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid rgba(128, 128, 128, 0.2);" />
+    {{ else }}
+      <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(128, 128, 128, 0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 600; font-size: 1.2rem;">
+        {{ substr .Params.authorName 0 1 | upper }}
+      </div>
+    {{ end }}
+    <div>
+      <div style="font-weight: 600; font-size: 0.95rem;">
+        {{ .Params.authorName }}
+      </div>
+      {{ if .Params.authorBio }}
+        <div style="font-size: 0.85rem; opacity: 0.7;">
+          {{ .Params.authorBio }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
+
