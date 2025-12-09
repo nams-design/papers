@@ -4,7 +4,7 @@ date: 2025-12-08T12:00:00+05:30
 draft: false
 author:
   name: "NAMS Team"
-  avatar: "/images/icon.png"
+  avatar: "/images/team.png"
 ---
 
 Welcome to the NAMS Whitepapers site!
