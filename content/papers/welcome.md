@@ -2,6 +2,9 @@
 title: "Hello World"
 date: 2025-12-08T12:00:00+05:30
 draft: false
+author:
+  name: "NAMS Team"
+  avatar: "/images/icon.png"
 ---
 
 Welcome to the NAMS Whitepapers site!
