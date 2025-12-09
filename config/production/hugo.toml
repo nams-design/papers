@@ -1,2 +1,5 @@
 baseURL = 'https://nams-design.github.io/papers/'
+theme = 'hello-friend-ng'
+canonifyURLs = true
+relativeURLs = false
 
